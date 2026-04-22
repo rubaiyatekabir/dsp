@@ -1,0 +1,298 @@
+1. What is DSP?
+   Digital Signal Processing is the analysis and processing of signals using digital methods.
+
+2. What is sampling?
+   Sampling is converting a continuous-time signal into discrete values at regular intervals.
+
+3. What is sampling frequency?
+   Number of samples taken per second.
+
+4. What is Nyquist rate?
+   Twice the highest frequency present in the signal.
+
+5. What happens if sampling frequency is too low?
+   Aliasing occurs.
+
+6. What is aliasing?
+   High-frequency components appear as false lower frequencies after sampling.
+
+7. What is DFT?
+   Discrete Fourier Transform converts a signal from time domain to frequency domain.
+
+8. Why do we use FFT?
+   FFT is a faster method to compute DFT.
+
+9. What does magnitude spectrum show?
+   It shows the strength of frequency components.
+
+10. Why did the 1 second signal give a cleaner spectrum?
+    Because it contained an integer number of cycles.
+
+11. What is spectral leakage?
+    Spreading of signal energy into nearby frequency bins.
+
+12. Why does leakage occur?
+    Because of non-integer number of cycles in the observation window.
+
+13. Why is Hamming window used?
+    To reduce spectral leakage.
+
+14. What is a window function?
+    A function used to taper signal edges before FFT.
+
+15. What is white noise?
+    Random noise containing many frequency components.
+
+16. What is smoothing filter?
+    A filter used to reduce rapid random noise variations.
+
+17. What is a moving average filter?
+    A filter that averages nearby samples.
+
+18. Why was a 6-point filter used?
+    To smooth the noisy signal by averaging 6 samples.
+
+19. What is convolution?
+    A mathematical operation used to apply a filter to a signal.
+
+20. Why use convolution in filtering?
+    Because output of an LTI system is input convolved with impulse response.
+
+21. What is impulse response?
+    Output of a system when input is a unit impulse.
+
+22. What is FIR filter?
+    Finite Impulse Response filter with finite number of coefficients.
+
+23. Why FIR filters are preferred?
+    They are stable and can provide linear phase.
+
+24. What is cutoff frequency?
+    Frequency where filter starts reducing the signal.
+
+25. What is low-pass filter?
+    A filter that passes low frequencies and attenuates high frequencies.
+
+26. Why was 20 Hz cutoff chosen?
+    To pass 10 Hz signal and remove 100 Hz noise.
+
+27. What is Hamming window in FIR design?
+    A window used to reduce side lobes and ripple.
+
+28. What happens if filter length increases?
+    Sharper response but more delay and computation.
+
+29. What is autocorrelation?
+    Correlation of a signal with itself.
+
+30. What is cross-correlation?
+    Correlation between two different signals.
+
+31. Why use cross-correlation?
+    To find similarity or delay between signals.
+
+32. How was delay found in experiment?
+    From the peak position of correlation.
+
+33. Why autocorrelation peak is maximum at zero lag?
+    Because signal matches itself perfectly.
+
+34. Why sine and square wave correlation was noticeable?
+    Because both had same frequency.
+
+35. Why sine 10 Hz and sine 20 Hz had low correlation?
+    Because frequencies were different.
+
+36. What is lag in correlation?
+    Shift amount between two signals.
+
+37. Why only positive half of FFT was plotted?
+    Because FFT of real signals is symmetric.
+
+38. What is phase response?
+    Shows phase shift introduced by the filter.
+
+39. What is magnitude response?
+    Shows how much each frequency is passed or attenuated.
+
+40. What is linear phase?
+    All frequency components are delayed equally.
+41. What is a discrete-time signal?
+    A signal defined only at specific sample points.
+
+42. What is a continuous-time signal?
+    A signal defined for every instant of time.
+
+43. What is quantization?
+    Converting signal amplitudes into finite digital levels.
+
+44. What is quantization error?
+    Difference between actual value and quantized value.
+
+45. What is resolution in ADC?
+    Smallest amplitude change an ADC can detect.
+
+46. What is ADC?
+    Analog to Digital Converter.
+
+47. What is DAC?
+    Digital to Analog Converter.
+
+48. What is time domain representation?
+    Signal shown as amplitude versus time.
+
+49. What is frequency domain representation?
+    Signal shown as amplitude versus frequency.
+
+50. Why is frequency domain useful?
+    It helps identify frequency components easily.
+
+51. What is a sinusoidal signal?
+    A periodic signal in sine or cosine form.
+
+52. What is amplitude of a signal?
+    Maximum value of the signal.
+
+53. What is period of a signal?
+    Time taken to complete one cycle.
+
+54. What is frequency of a signal?
+    Number of cycles per second.
+
+55. Relation between frequency and period?
+    Frequency = 1 / Period.
+
+56. What is phase of a signal?
+    Angular shift of a waveform.
+
+57. What is angular frequency?
+    2πf radians per second.
+
+58. What is fundamental frequency?
+    Lowest frequency of a periodic signal.
+
+59. What is harmonic?
+    Integer multiple of the fundamental frequency.
+
+60. Why does square wave contain harmonics?
+    Because it is non-sinusoidal.
+
+61. What is random noise?
+    Unwanted unpredictable disturbance in a signal.
+
+62. What is Gaussian noise?
+    Noise with normal probability distribution.
+
+63. What is SNR?
+    Signal-to-noise ratio.
+
+64. High SNR means what?
+    Signal is stronger than noise.
+
+65. Low SNR means what?
+    Noise is high compared to signal.
+
+66. What is passband?
+    Frequency range allowed through the filter.
+
+67. What is stopband?
+    Frequency range strongly attenuated by the filter.
+
+68. What is transition band?
+    Region between passband and stopband.
+
+69. What is attenuation?
+    Reduction in signal magnitude.
+
+70. What is gain?
+    Amplification factor of a system.
+
+71. What is unity gain?
+    Gain equal to 1.
+
+72. What is normalization of frequency?
+    Expressing frequency relative to sampling frequency.
+
+73. What is zero padding?
+    Adding zeros to a signal before FFT.
+
+74. Why use zero padding?
+    To improve FFT display resolution.
+
+75. Does zero padding add information?
+    No, it only improves visual resolution.
+
+76. What is FFT bin?
+    A discrete frequency location in FFT output.
+
+77. What determines FFT resolution?
+    Sampling frequency divided by number of samples.
+
+78. What is leakage reduction method?
+    Using window functions.
+
+79. Name common windows.
+    Rectangular, Hamming, Hann, Blackman.
+
+80. Which window has lower ripple than rectangular?
+    Hamming window.
+
+81. What is side lobe?
+    Small unwanted peaks beside main lobe in spectrum.
+
+82. What is main lobe?
+    Central peak of a window spectrum.
+
+83. Why are side lobes undesirable?
+    They cause leakage to nearby frequencies.
+
+84. What is ripple in filter response?
+    Small oscillations in passband or stopband.
+
+85. What is ideal low-pass filter?
+    Passes all low frequencies and blocks all high frequencies perfectly.
+
+86. Is ideal filter practical?
+    No, it requires infinite impulse response.
+
+87. Why use practical FIR filter?
+    It is stable and implementable.
+
+88. What is filter order?
+    Related to number of coefficients in filter.
+
+89. Higher order filter means what?
+    Sharper frequency response.
+
+90. What is delay in FIR filter?
+    Time shift introduced by the filter.
+
+91. What is group delay?
+    Average delay of signal components.
+
+92. What is symmetric impulse response?
+    Coefficients mirror around center.
+
+93. Symmetric FIR gives what benefit?
+    Linear phase response.
+
+94. What is causal system?
+    Output depends only on present and past inputs.
+
+95. What is stable system?
+    Bounded input gives bounded output.
+
+96. What is LTI system?
+    Linear Time Invariant system.
+
+97. Why are LTI systems important?
+    They are easy to analyze using convolution and frequency response.
+
+98. What is energy signal?
+    Signal with finite total energy.
+
+99. What is power signal?
+    Signal with finite average power.
+
+100. Why is DSP important in real life?
+     Used in audio, image processing, communication, radar, biomedical systems.
