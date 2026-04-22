@@ -1,0 +1,56 @@
+
+1. 10 Hz sine wave, DFT, 1 s vs 0.95 s, Hamming window
+
+Step 1: Set sampling frequency and generate a 10 Hz sine wave for 1 second.
+Step 2: Compute its DFT and plot the magnitude spectrum.
+Step 3: Generate the same sine wave for 0.95 second, compute DFT, and plot the spectrum.
+Step 4: Compare both spectra and observe spectral leakage in the 0.95 s case.
+Step 5: Apply a Hamming window to the 0.95 s signal, compute DFT again, and compare the result.
+
+2. Noisy 10 Hz sine wave with 6-point smoothing filter
+
+Step 1: Generate a 10 Hz sine wave and add white noise to it.
+Step 2: Define a 6-point averaging filter.
+Step 3: Apply the filter using convolution.
+Step 4: Plot the noisy and filtered signals.
+Step 5: Observe that the filtered signal is smoother.
+
+3. Sine wave, delayed version, and cross-correlation
+
+Step 1: Generate a sine wave.
+Step 2: Create a delayed version by shifting it by 10 samples.
+Step 3: Compute the cross-correlation between original and delayed signals.
+Step 4: Find the lag where the correlation is maximum.
+Step 5: Use that lag as the estimated delay.
+
+4. 30 Hz and 70 Hz sine waves sampled at 100 Hz
+
+Step 1: Generate the 30 Hz sine wave and compute its DFT magnitude spectrum.
+Step 2: Generate the 70 Hz sine wave and compute its DFT magnitude spectrum.
+Step 3: Plot both spectra.
+Step 4: Compare them using the Nyquist concept.
+Step 5: Conclude that the 70 Hz signal gets aliased.
+
+5. 10 Hz signal plus 100 Hz noise, FIR low-pass filter
+
+Step 1: Generate a 10 Hz sine wave and add 100 Hz sine noise.
+Step 2: Design a low-pass FIR filter with 20 Hz cutoff using Hamming window.
+Step 3: Apply the filter using convolution.
+Step 4: Plot the noisy and filtered signals.
+Step 5: Observe that the high-frequency noise is removed.
+
+6. Correlation of 10 Hz sine, 10 Hz square, and 20 Hz sine
+
+Step 1: Generate the three signals: 10 Hz sine, 10 Hz square, and 20 Hz sine.
+Step 2: Compute autocorrelation of the 10 Hz sine wave.
+Step 3: Compute cross-correlation of 10 Hz sine with 10 Hz square.
+Step 4: Compute cross-correlation of 10 Hz sine with 20 Hz sine.
+Step 5: Compare the results and explain which signals are more similar.
+
+7. FIR low-pass filter design using Hamming window
+
+Step 1: Design the FIR low-pass filter using the given sampling frequency, cutoff frequency, length, and Hamming window.
+Step 2: Plot the impulse response from the filter coefficients.
+Step 3: Compute the frequency response of the filter.
+Step 4: Plot the magnitude and phase responses.
+Step 5: Analyze how the filter passes low frequencies and attenuates high frequencies.
